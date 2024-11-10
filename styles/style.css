@@ -1,0 +1,128 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  font-family: 'Host Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-image: url('../images/bg-image.jpg');
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  width: 100vw;
+  min-height: 100vh;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 608px;
+  box-sizing: border-box;
+}
+
+main > div {
+  margin-top: 2rem;
+}
+
+main > h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.4);
+}
+
+.field {
+  width: 100%;
+}
+
+.field > input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px 15px;
+  color: rgb(55, 55, 55);
+  font-family: inherit;
+}
+
+.field > label {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0, 0.4);
+}
+
+.button-style {
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e9e9ed;
+  border: none;
+  transition-duration: 0.5s;
+  font-family: inherit;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.4);
+}
+
+.button-style:hover {
+  background-color: #c1c1cd;
+}
+
+#submit-button {
+  margin-right: 5px;
+}
+
+#level-result {
+  min-height: 1.5rem;
+  max-width: 100%;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+footer {
+  background-color: transparent;
+  margin: 5px auto;
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  footer {
+    max-width: 90%;
+  }
+}
+
+@media (max-height: 610px) {
+  main {
+    margin-top: 10px;
+    width: 95%;
+  }
+}

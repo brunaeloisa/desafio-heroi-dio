@@ -2,8 +2,8 @@
 function escreveMensagem(nomeHeroi, nivelHeroi) {
   // Define uma cor para cada nível
   const cores = {
-    "Ferro": "#666666",
-    "Bronze": "#CD7F32",
+    "Ferro": "#634c47",
+    "Bronze": "#b37232",
     "Prata": "#B1B1B1",
     "Ouro": "#FFD700",
     "Platina": "#7AB9D6",
